@@ -11,6 +11,7 @@
     "core-js": "^3.8.3",
     "modern-normalize": "^1.1.0",
     "postcss": "^8.4.16",
+    "reset-css": "^5.0.1",
     "sass": "^1.54.4",
     "sass-loader": "^13.0.2",
     "v-wow": "github:guisoares2011/vue-wow",
