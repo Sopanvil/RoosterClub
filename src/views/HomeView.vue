@@ -25,7 +25,7 @@
         </div>
       </div>
       <div class="main-intro-frame">
-        <iframe frameborder="0" width="800px" height="800px"></iframe>
+        <iframe src="https://my.spline.design/roostercopy-0882ea22d3e37b0ec342c0c6ae14697e/" frameborder="0" width="800px" height="800px"></iframe>
         <!-- src="https://my.spline.design/roostercopy-0882ea22d3e37b0ec342c0c6ae14697e/" -->
       </div>
     </div>
@@ -371,7 +371,7 @@ export default {
           font-size: 16px;
           font-weight: 300;
           &-table {
-            margin-bottom: 5px;
+            margin-bottom: 10px;
           }
         }
       }
