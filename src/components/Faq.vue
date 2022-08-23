@@ -71,7 +71,7 @@ export default {
 
 <style lang="scss" scoped>
 .faq {
-  padding: 60px 0 80px 0;
+  padding: 100px 0;
   .container {
     max-width: 900px;
     margin: 0 auto;
@@ -110,6 +110,34 @@ export default {
         margin-top: 20px;
         font-weight: 300;
         font-size: 19px;
+      }
+    }
+  }
+}
+// Media
+@media (max-width: 945px) {
+  .faq {
+    .container {
+      margin: 0 20px;
+    }
+  }
+}
+@media (max-width: 550px) {
+  .faq {
+    padding: 50px 0;
+    .container {
+      .faq-title {
+        font-size: 30px;
+        margin-bottom: 30px;
+      }
+      .faq-list {
+        max-height: 50px;
+        &-title {
+          font-size: 16px;
+        }
+        &-text {
+          font-size: 14px;
+        }
       }
     }
   }

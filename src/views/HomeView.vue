@@ -16,16 +16,21 @@
           the other hand, and gives the opportunity for weekly passive income.
         </p>
         <div class="main-intro-links">
-          <a href="https://twitter.com/nft_RFC"
-            ><img src="../assets/img/twitter.png" alt=""
+          <a href="https://twitter.com/nft_RFC" target="_blank"
+            ><img src="../assets/img/twitter.png"
           /></a>
-          <a href="https://discord.gg/wBHYJkmpg5"
+          <a href="https://discord.gg/wBHYJkmpg5" target="_blank"
             ><img src="../assets/img/discord.png" alt=""
           /></a>
         </div>
       </div>
       <div class="main-intro-frame">
-        <iframe src="https://my.spline.design/roostercopy-0882ea22d3e37b0ec342c0c6ae14697e/" frameborder="0" width="800px" height="800px"></iframe>
+        <iframe
+          src="https://my.spline.design/roostercopy-0882ea22d3e37b0ec342c0c6ae14697e/"
+          frameborder="0"
+          width="800px"
+          height="800px"
+        ></iframe>
         <!-- src="https://my.spline.design/roostercopy-0882ea22d3e37b0ec342c0c6ae14697e/" -->
       </div>
     </div>
@@ -85,8 +90,8 @@
               <p class="roadmap-phase-text-table">Launch twitter and discord</p>
               <p class="roadmap-phase-text-table">
                 Build an active and engaging community, partner with trusted
+                collections
               </p>
-              <p class="roadmap-phase-text-table">collections</p>
               <p class="roadmap-phase-text-table">Launch website</p>
               <p class="roadmap-phase-text-table">Develope RGC game</p>
               <p class="roadmap-phase-text-table">Show Preview RGC game</p>
@@ -141,6 +146,68 @@
       </div>
     </div>
   </div>
+  <div class="roadmap-for-phone">
+    <div class="container">
+      <p class="roadmap-title yellow">Roadmap</p>
+      <div class="container-phase">
+        <div class="roadmap-phase">
+          <p class="roadmap-phase-title yellow">Phase 1</p>
+          <div class="roadmap-phase-text">
+            <p class="roadmap-phase-text-table">Creating uniq RGC collection</p>
+            <p class="roadmap-phase-text-table">Launch twitter and discord</p>
+            <p class="roadmap-phase-text-table">
+              Build an active and engaging community, partner with trusted
+              collections
+            </p>
+            <p class="roadmap-phase-text-table">Launch website</p>
+            <p class="roadmap-phase-text-table">Develope RGC game</p>
+            <p class="roadmap-phase-text-table">Show Preview RGC game</p>
+          </div>
+        </div>
+        <div class="roadmap-arrow-down"></div>
+        <div class="roadmap-phase">
+          <p class="roadmap-phase-title yellow">Phase 2</p>
+          <div class="roadmap-phase-text">
+            <p class="roadmap-phase-text-table">
+              Drop of GEN 1 and listing on ME after sold out
+            </p>
+            <p class="roadmap-phase-text-table">DAO and verify for holders</p>
+            <p class="roadmap-phase-text-table">
+              Launch Dice game after sold out
+            </p>
+            <p class="roadmap-phase-text-table">
+              Launching a DAO vote to install a new game
+            </p>
+            <p class="roadmap-phase-text-table">
+              Start weekly distributing revenue to holders
+            </p>
+            <p class="roadmap-phase-text-table">
+              Start Creating GEN 2 collection, with betting on NFT
+            </p>
+          </div>
+        </div>
+        <div class="roadmap-arrow-down"></div>
+
+        <div class="roadmap-phase">
+          <p class="roadmap-phase-title yellow">Phase 3</p>
+          <div class="roadmap-phase-text">
+            <p class="roadmap-phase-text-table">Drop off Gen 2 collection</p>
+            <p class="roadmap-phase-text-table">
+              Creating a unique platform for betting on NFT
+            </p>
+            <p class="roadmap-phase-text-table">
+              DAO vote for rules and utility
+            </p>
+            <p class="roadmap-phase-text-table">Full platform launch</p>
+            <p class="roadmap-phase-text-table">
+              Collabs with other trusted collection and integration with our
+              platform
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <Faq />
   <div class="team">
     <div class="container">
@@ -171,10 +238,10 @@
   </div>
   <div class="slinks">
     <div class="slinks-links">
-      <a href="https://twitter.com/nft_RFC"
+      <a href="https://twitter.com/nft_RFC" target="_blank"
         ><img src="../assets/img/twitter.png"
       /></a>
-      <a href="https://discord.gg/wBHYJkmpg5"
+      <a href="https://discord.gg/wBHYJkmpg5" target="_blank"
         ><img src="../assets/img/discord.png"
       /></a>
     </div>
@@ -192,6 +259,23 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@mixin phone-font-title() {
+  @media only screen and (max-width: 550px) {
+    font-size: 30px;
+  }
+  @media only screen and (min-width: 551px) {
+    font-size: 60px;
+  }
+}
+@mixin phone-font-text() {
+  @media only screen and (max-width: 550px) {
+    font-size: 16px;
+  }
+  @media only screen and (min-width: 551px) {
+    font-size: 19px;
+  }
+}
+
 .main {
   .container {
     max-width: 1380px;
@@ -212,7 +296,7 @@ export default {
       }
       &-textarea {
         margin-top: 30px;
-        font-size: 19px;
+        @include phone-font-text;
         font-weight: 300;
       }
       &-links {
@@ -235,16 +319,16 @@ export default {
   background-color: #15161b;
   .container {
     max-width: 1380px;
-    height: 512px;
     margin: 0 auto;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
     .info-image {
+      max-width: 512px;
+      max-height: 512px;
       img {
-        width: 512px;
-        height: 512px;
+        width: 100%;
         border-radius: 20px;
         box-shadow: 0px 0px 20px #b7c7b977;
       }
@@ -252,12 +336,12 @@ export default {
     .info-text {
       max-width: 600px;
       &-main {
-        font-size: 60px;
+        @include phone-font-title;
         font-weight: 700;
       }
       &-textarea {
         margin-top: 20px;
-        font-size: 19px;
+        @include phone-font-text;
         font-weight: 300;
       }
     }
@@ -278,20 +362,21 @@ export default {
       max-width: 900px;
       text-align: center;
       &-main {
-        font-size: 60px;
+        @include phone-font-title;
         font-weight: 700;
       }
       &-textarea {
         margin-top: 20px;
-        font-size: 19px;
+        @include phone-font-text;
         font-weight: 300;
       }
     }
     .features-image {
       margin-top: 60px;
+      max-width: 700px;
+      max-height: 200px;
       img {
-        width: 700px;
-        height: 200px;
+        width: 100%;
         border-radius: 10px;
         box-shadow: 0px 0px 25px #ffffff46;
       }
@@ -382,6 +467,65 @@ export default {
     }
   }
 }
+.roadmap-for-phone {
+  padding: 60px 0;
+  background-color: #15161b;
+  height: 1600px;
+  display: none;
+  .container {
+    max-width: 1380px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .roadmap-title {
+      margin-bottom: 100px;
+      @include phone-font-title;
+      font-weight: 700;
+    }
+    .container-phase {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+
+      .roadmap-arrow-down {
+        width: 0;
+        height: 150px;
+        border: 3px solid #ffcb00;
+        border-radius: 15px;
+        box-shadow: 0px 0px 10px #ffcb00;
+      }
+      .roadmap-phase {
+        max-width: 450px;
+        min-height: 286px;
+        padding: 30px;
+        border-radius: 15px;
+        background-color: #26272e;
+        box-shadow: 0 0 15px #0c0d11;
+        &-title {
+          margin-bottom: 15px;
+          font-size: 25px;
+          font-weight: 500;
+        }
+        &-text {
+          font-size: 16px;
+          font-weight: 300;
+          &-table {
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+    img {
+      width: 380px;
+      height: 411px;
+    }
+  }
+}
 .team {
   padding: 80px 0;
   color: #fff;
@@ -392,9 +536,10 @@ export default {
     position: relative;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     .team-title {
       text-align: center;
-      font-size: 60px;
+      @include phone-font-title;
       font-weight: 700;
       margin-bottom: 80px;
     }
@@ -403,14 +548,14 @@ export default {
       display: flex;
       justify-content: space-between;
       &-card {
+        max-width: 296px;
         padding: 20px;
         border-radius: 15px;
         color: #0c0d11;
         text-align: center;
         transition: 0.2s;
         img {
-          width: 256px;
-          height: 256px;
+          width: 100%;
           border-radius: 15px;
         }
         &-title {
@@ -420,7 +565,7 @@ export default {
         }
         &-text {
           margin-top: 10px;
-          font-size: 18px;
+          @include phone-font-text;
           font-weight: 400;
         }
         &:nth-child(1) {
@@ -478,6 +623,145 @@ export default {
         width: 25px;
         height: 25px;
       }
+    }
+  }
+}
+
+// Media
+
+@media (max-width: 1415px) {
+  .info {
+    .container {
+      margin: 0 20px;
+    }
+  }
+  .team {
+    .container {
+      margin: 0 20px;
+      .team-list {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+    }
+  }
+}
+@media (max-width: 1400px) {
+  .main {
+    .container {
+      flex-direction: column;
+      align-items: center;
+      .main-intro {
+        max-width: 800px;
+        text-align: center;
+        align-items: center;
+        &-links {
+          justify-content: center;
+        }
+      }
+    }
+  }
+  .roadmap {
+    .container {
+      margin: 0 20px;
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .info {
+    .container {
+      flex-direction: column;
+      text-align: center;
+      .info-image {
+        margin-bottom: 40px;
+      }
+    }
+  }
+  .features {
+    .container {
+      margin: 0 20px;
+    }
+  }
+  .roadmap {
+    display: none;
+  }
+  .roadmap-for-phone {
+    display: block;
+    .container {
+      margin: 0 20px;
+    }
+  }
+}
+@media (max-width: 850px) {
+  .main {
+    .container {
+      margin: 0 20px;
+      .main-intro {
+        &-frame {
+          display: none;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 550px) {
+  .main {
+    .container {
+      .main-intro {
+        &-head {
+          font-size: 44px;
+        }
+        &-text {
+          font-size: 25px;
+        }
+        &-textarea {
+          font-size: 16px;
+        }
+        &-links {
+          a {
+            img {
+              width: 30px;
+              height: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .info {
+    padding: 50px 0;
+  }
+  .features {
+    padding: 50px 0;
+  }
+.roadmap-for-phone {
+  height: 1400px;
+    .container {
+      .roadmap-title {
+        margin-bottom: 50px;
+      }
+      .container-phase {
+        .roadmap-phase {
+          min-height: 273px;
+          &-title {
+            font-size: 24px;
+          }
+          &-text {
+            font-size: 16px ;
+          }
+        }
+        .roadmap-arrow-down {
+          height: 100px;
+        }
+      }
+    }
+  }
+}
+.team {
+  padding: 50px 0;
+  .container {
+    .team-title {
+      margin-bottom: 40px;
     }
   }
 }
