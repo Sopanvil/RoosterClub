@@ -25,7 +25,7 @@
         </div>
       </div>
       <div class="main-intro-frame">
-        <iframe src="https://my.spline.design/roostercopy-0882ea22d3e37b0ec342c0c6ae14697e/" frameborder="0" width="800px" height="800px"></iframe>
+        <iframe frameborder="0" width="800px" height="800px"></iframe>
         <!-- src="https://my.spline.design/roostercopy-0882ea22d3e37b0ec342c0c6ae14697e/" -->
       </div>
     </div>
@@ -154,17 +154,17 @@
         <div class="team-list-card">
           <img src="../assets/img/rooster-developer.png" />
           <p class="team-list-card-title">Main dev</p>
-          <p class="team-list-card-text">sormano</p>
+          <p class="team-list-card-text">ormano</p>
         </div>
         <div class="team-list-card">
           <img src="../assets/img/rooster-developer1.png" />
-          <p class="team-list-card-title">Junior dev</p>
-          <p class="team-list-card-text">snoopy</p>
+          <p class="team-list-card-title">Developer rooster jn.</p>
+          <p class="team-list-card-text">Title</p>
         </div>
         <div class="team-list-card">
           <img src="../assets/img/rooster-market.png" />
-          <p class="team-list-card-title">Collab manager</p>
-          <p class="team-list-card-text">Facckt on sol</p>
+          <p class="team-list-card-title">Co founder rooster</p>
+          <p class="team-list-card-text">Title</p>
         </div>
       </div>
     </div>

@@ -58,6 +58,7 @@ export default {};
         padding: 5px 15px;
         background: #00000000;
         border-radius: 5px;
+        text-decoration: none;
         transition: 0.2s;
         &:hover {
           background: #f1f1f123;
@@ -68,6 +69,7 @@ export default {};
         padding: 5px 15px;
         background: #00000000;
         border-radius: 5px;
+        text-decoration: none;
         cursor: not-allowed;
       }
     }

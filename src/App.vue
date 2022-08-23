@@ -13,7 +13,7 @@ export default {
 </script>
 <style>
 @import 'assets/styles/fonts.css';
-@import 'reset-css';
+
 .yellow {
   color: #ffcb00;
   text-shadow: 0 0 10px#ffcb00;

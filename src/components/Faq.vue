@@ -89,7 +89,7 @@ export default {
       padding: 15px;
       transition: 0.3s;
       border-bottom: 1px solid #ffffff50;
-      max-height: 70px;
+      max-height: 65px;
       overflow: hidden;
       transition: max-height 0.5s, background-color 0.3s;
       &:nth-child(2) {
