@@ -154,17 +154,17 @@
         <div class="team-list-card">
           <img src="../assets/img/rooster-developer.png" />
           <p class="team-list-card-title">Main dev</p>
-          <p class="team-list-card-text">ormano</p>
+          <p class="team-list-card-text">sormano</p>
         </div>
         <div class="team-list-card">
           <img src="../assets/img/rooster-developer1.png" />
-          <p class="team-list-card-title">Developer rooster jn.</p>
-          <p class="team-list-card-text">Title</p>
+          <p class="team-list-card-title">Junior dev</p>
+          <p class="team-list-card-text">snoopy</p>
         </div>
         <div class="team-list-card">
           <img src="../assets/img/rooster-market.png" />
-          <p class="team-list-card-title">Co founder rooster</p>
-          <p class="team-list-card-text">Title</p>
+          <p class="team-list-card-title">Collab manager</p>
+          <p class="team-list-card-text">Facckt on sol</p>
         </div>
       </div>
     </div>
