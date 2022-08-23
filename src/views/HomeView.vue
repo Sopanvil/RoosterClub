@@ -709,6 +709,7 @@ export default {
     .container {
       .main-intro {
         &-head {
+          margin-top: 100px;
           font-size: 44px;
         }
         &-text {
