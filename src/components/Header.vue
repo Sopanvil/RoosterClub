@@ -43,6 +43,7 @@ export default {};
       display: flex;
       align-items: center;
       color: #f5f5f5;
+      text-decoration: none;
       .logo-text {
         margin-left: 15px;
         font-weight: 600;
