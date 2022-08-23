@@ -27,31 +27,28 @@ export default {
       faqs: [
         {
           show: false,
-          title: "1 question",
-          text: "          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis\
-          vero, veritatis velit porro, non at est nobis neque quibusdam optio\
-          quidem nisi tenetur? Provident sequi maiores omnis inventore eum\
-          itaque.",
+          title: "How many ROOSTERS are available?",
+          text: "1 111",
         },
         {
           show: false,
-          title: "2 question",
-          text: "dope roosters success",
+          title: "What is the mint price?",
+          text: "0.35 SOL",
         },
         {
           show: false,
-          title: "3 question",
-          text: "dope roosters success",
+          title: "When is the launch?",
+          text: "Launch Date and Time : TBA",
         },
         {
           show: false,
-          title: "4 question",
-          text: "dope roosters success",
+          title: "Where will be the listing?",
+          text: "We will list on MAGICEDEN after Sold Out",
         },
         {
           show: false,
-          title: "5 question",
-          text: "dope roosters success",
+          title: "How do I get a rooster?",
+          text: "The link of the mint will be provided in at MINT TIME",
         },
       ],
     };
@@ -75,8 +72,6 @@ export default {
 <style lang="scss" scoped>
 .faq {
   padding: 60px 0 80px 0;
-  margin-top: 120px;
-  background-color: #15161b;
   .container {
     max-width: 900px;
     margin: 0 auto;
@@ -108,7 +103,7 @@ export default {
         max-height: 200px;
       }
       &-title {
-        font-size: 40px;
+        font-size: 30px;
         font-weight: 400;
       }
       &-text {

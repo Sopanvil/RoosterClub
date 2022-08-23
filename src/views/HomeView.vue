@@ -3,31 +3,29 @@
     <div class="container">
       <div class="main-intro">
         <p class="main-intro-head">ROOSTERS GAMBLING CLUB</p>
-        <p class="main-intro-text yellow">All or nothing</p>
+        <p class="main-intro-text yellow">Place your bet, sir!</p>
         <p class="main-intro-textarea">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis
-          vero, veritatis velit porro, non at est nobis neque quibusdam optio
-          quidem nisi tenetur? Provident sequi maiores omnis inventore eum
-          itaque.
+          For a long time, people want money and circuses. We took cockfights as
+          the basis of our project, which met these needs in distant offline
+          times. We moved them here so that you could earn a tidy sum and enjoy
+          the process.
         </p>
         <p class="main-intro-textarea">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis
-          vero, veritatis velit porro, non at est nobis neque quibusdam optio
-          quidem nisi tenetur? Provident sequi maiores omnis inventore eum
-          itaque.
+          Our project is not like any existing one. It's not p2e, l2e or m2e.
+          Our platform is truly unique because it opens up the world of NFT, on
+          the other hand, and gives the opportunity for weekly passive income.
         </p>
         <div class="main-intro-links">
-          <a href=""><img src="../assets/img/twitter.png" alt="" /></a>
-          <a href=""><img src="../assets/img/discord.png" alt="" /></a>
+          <a href="https://twitter.com/nft_RFC"
+            ><img src="../assets/img/twitter.png" alt=""
+          /></a>
+          <a href="https://discord.gg/wBHYJkmpg5"
+            ><img src="../assets/img/discord.png" alt=""
+          /></a>
         </div>
       </div>
       <div class="main-intro-frame">
-        <iframe
-          src="https://my.spline.design/roostercopy-0882ea22d3e37b0ec342c0c6ae14697e/"
-          frameborder="0"
-          width="800px"
-          height="800px"
-        ></iframe>
+        <iframe src="https://my.spline.design/roostercopy-0882ea22d3e37b0ec342c0c6ae14697e/" frameborder="0" width="800px" height="800px"></iframe>
         <!-- src="https://my.spline.design/roostercopy-0882ea22d3e37b0ec342c0c6ae14697e/" -->
       </div>
     </div>
@@ -39,17 +37,16 @@
       </div>
       <div class="info-text">
         <p class="info-text-main">
-          The coolest <span class="yellow">rooster</span> on block
+          Betting on the <span class="yellow">NFT</span>, has this happened
+          before?
         </p>
         <p class="info-text-textarea">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis,
-          nemo iure! Omnis asperiores doloremque magnam ab velit corporis
-          architecto minima minus error cupiditate? Laborum quam ipsam totam
-          ipsum, perspiciatis iusto?
+          NFT betting - is a project where each holder will be able to
+          participate in a match against an opponent and the other participants
+          will be able to bet on the winner.
         </p>
         <p class="info-text-textarea">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis,
-          nemo iure!
+          Have you seen something like this?(Check our lite paper)
         </p>
       </div>
     </div>
@@ -58,21 +55,89 @@
     <div class="container">
       <div class="features-text">
         <p class="features-text-main">
-          All holders roosters <span class="yellow">90%</span> profit
+          <span class="yellow">90%</span> Revenue share for holders weekly
         </p>
         <p class="features-text-textarea">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis,
-          nemo iure! Omnis asperiores doloremque magnam ab velit corporis
-          architecto minima minus error cupiditate? Laborum quam ipsam totam
-          ipsum, perspiciatis iusto?
+          Casino games with 90% revshare - as the first stage for creating a
+          something big and new…
         </p>
+        <p class="features-text-textarea">DAO voting for install new games</p>
         <p class="features-text-textarea">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis,
-          nemo iure!
+          Launch first game after sold out, in next day
         </p>
       </div>
       <div class="features-image">
         <img src="../assets/img/eyes.png" />
+      </div>
+    </div>
+  </div>
+  <div class="roadmap">
+    <div class="container">
+      <p class="roadmap-title yellow">Roadmap</p>
+      <div class="container-phase">
+        <div class="roadmap-first">
+          <div class="roadmap-phase">
+            <p class="roadmap-phase-title yellow">Phase 1</p>
+            <div class="roadmap-phase-text">
+              <p class="roadmap-phase-text-table">
+                Creating uniq RGC collection
+              </p>
+              <p class="roadmap-phase-text-table">Launch twitter and discord</p>
+              <p class="roadmap-phase-text-table">
+                Build an active and engaging community, partner with trusted
+              </p>
+              <p class="roadmap-phase-text-table">collections</p>
+              <p class="roadmap-phase-text-table">Launch website</p>
+              <p class="roadmap-phase-text-table">Develope RGC game</p>
+              <p class="roadmap-phase-text-table">Show Preview RGC game</p>
+            </div>
+          </div>
+          <img src="../assets/img/tracer.png" alt="" />
+        </div>
+        <div class="roadmap-second">
+          <div class="roadmap-arrow"></div>
+        </div>
+        <div class="roadmap-third">
+          <div class="roadmap-phase">
+            <p class="roadmap-phase-title yellow">Phase 2</p>
+            <div class="roadmap-phase-text">
+              <p class="roadmap-phase-text-table">
+                Drop of GEN 1 and listing on ME after sold out
+              </p>
+              <p class="roadmap-phase-text-table">DAO and verify for holders</p>
+              <p class="roadmap-phase-text-table">
+                Launch Dice game after sold out
+              </p>
+              <p class="roadmap-phase-text-table">
+                Launching a DAO vote to install a new game
+              </p>
+              <p class="roadmap-phase-text-table">
+                Start weekly distributing revenue to holders
+              </p>
+              <p class="roadmap-phase-text-table">
+                Start Creating GEN 2 collection, with betting on NFT
+              </p>
+            </div>
+          </div>
+          <div class="roadmap-arrow-down"></div>
+          <div class="roadmap-phase">
+            <p class="roadmap-phase-title yellow">Phase 3</p>
+            <div class="roadmap-phase-text">
+              <p class="roadmap-phase-text-table">Drop off Gen 2 collection</p>
+              <p class="roadmap-phase-text-table">
+                Creating a unique platform for betting on NFT
+              </p>
+              <p class="roadmap-phase-text-table">
+                DAO vote for rules and utility
+              </p>
+              <p class="roadmap-phase-text-table">Full platform launch</p>
+              <p class="roadmap-phase-text-table">
+                Collabs with other trusted collection and integration with our
+                platform
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -83,25 +148,35 @@
       <div class="team-list">
         <div class="team-list-card">
           <img src="../assets/img/rooster-info.png" />
-          <p class="team-list-card-title">Main rooster</p>
-          <p class="team-list-card-text">Title</p>
+          <p class="team-list-card-title">CO Founder</p>
+          <p class="team-list-card-text">whaler1der</p>
         </div>
         <div class="team-list-card">
           <img src="../assets/img/rooster-developer.png" />
-          <p class="team-list-card-title">Developer rooster</p>
-          <p class="team-list-card-text">Title</p>
+          <p class="team-list-card-title">Main dev</p>
+          <p class="team-list-card-text">sormano</p>
         </div>
         <div class="team-list-card">
           <img src="../assets/img/rooster-developer1.png" />
-          <p class="team-list-card-title">Developer rooster jn.</p>
-          <p class="team-list-card-text">Title</p>
+          <p class="team-list-card-title">Junior dev</p>
+          <p class="team-list-card-text">snoopy</p>
         </div>
         <div class="team-list-card">
           <img src="../assets/img/rooster-market.png" />
-          <p class="team-list-card-title">Co founder rooster</p>
-          <p class="team-list-card-text">Title</p>
+          <p class="team-list-card-title">Collab manager</p>
+          <p class="team-list-card-text">Facckt on sol</p>
         </div>
       </div>
+    </div>
+  </div>
+  <div class="slinks">
+    <div class="slinks-links">
+      <a href="https://twitter.com/nft_RFC"
+        ><img src="../assets/img/twitter.png"
+      /></a>
+      <a href="https://discord.gg/wBHYJkmpg5"
+        ><img src="../assets/img/discord.png"
+      /></a>
     </div>
   </div>
 </template>
@@ -155,7 +230,7 @@ export default {
   }
 }
 .info {
-  padding: 60px 0;
+  padding: 100px 0;
   margin-top: 35px;
   background-color: #15161b;
   .container {
@@ -189,7 +264,7 @@ export default {
   }
 }
 .features {
-  margin-top: 100px;
+  padding: 100px 0;
   color: #fff;
   .container {
     max-width: 1380px;
@@ -223,9 +298,94 @@ export default {
     }
   }
 }
+.roadmap {
+  padding: 60px 0;
+  background-color: #15161b;
+  height: 1100px;
+  .container {
+    max-width: 1380px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .roadmap-title {
+      margin-bottom: 100px;
+      font-size: 60px;
+      font-weight: 700;
+    }
+    .container-phase {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      .roadmap-first {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+      }
+      .roadmap-second {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: column;
+        .roadmap-arrow {
+          width: 250px;
+          height: 0px;
+          margin-top: 143px;
+          border: 3px solid #ffcb00;
+          border-radius: 15px;
+          box-shadow: 0px 0px 10px #ffcb00;
+        }
+      }
+      .roadmap-third {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        .roadmap-arrow-down {
+          width: 0;
+          height: 150px;
+          border: 3px solid #ffcb00;
+          border-radius: 15px;
+          box-shadow: 0px 0px 10px #ffcb00;
+        }
+      }
+      .roadmap-phase {
+        max-width: 450px;
+        min-height: 286px;
+        padding: 30px;
+        border-radius: 15px;
+        background-color: #26272e;
+        box-shadow: 0 0 15px #0c0d11;
+        &-title {
+          margin-bottom: 15px;
+          font-size: 25px;
+          font-weight: 500;
+        }
+        &-text {
+          font-size: 16px;
+          font-weight: 300;
+          &-table {
+            margin-bottom: 5px;
+          }
+        }
+      }
+    }
+    img {
+      width: 380px;
+      height: 411px;
+    }
+  }
+}
 .team {
   padding: 80px 0;
   color: #fff;
+  background-color: #15161b;
   .container {
     max-width: 1380px;
     margin: 0 auto;
@@ -247,7 +407,7 @@ export default {
         border-radius: 15px;
         color: #0c0d11;
         text-align: center;
-        transition: box-shadow 0.2s;
+        transition: 0.2s;
         img {
           width: 256px;
           height: 256px;
@@ -266,31 +426,57 @@ export default {
         &:nth-child(1) {
           background-color: #8d9c8f;
           box-shadow: 0 0 10px #8d9c8f50;
+          transform: translateY(0px);
           &:hover {
+            transform: translateY(-10px);
             box-shadow: 0 0 20px #8d9c8f50;
           }
         }
         &:nth-child(2) {
           background-color: #d1ab10;
           box-shadow: 0 0 10px #d1ab1050;
+          transform: translateY(0px);
           &:hover {
+            transform: translateY(-10px);
             box-shadow: 0 0 20px #d1ab1050;
           }
         }
         &:nth-child(3) {
           background-color: #8a6a7c;
           box-shadow: 0 0 10px #8a6a7c50;
+          transform: translateY(0px);
           &:hover {
+            transform: translateY(-10px);
             box-shadow: 0 0 20px #8a6a7c50;
           }
         }
         &:nth-child(4) {
           background-color: #803062;
           box-shadow: 0 0 10px #80306250;
+          transform: translateY(0px);
           &:hover {
+            transform: translateY(-10px);
             box-shadow: 0 0 20px #80306250;
           }
         }
+      }
+    }
+  }
+}
+.slinks {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 0 10px #15161b;
+  &-links {
+    width: 60px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    a {
+      img {
+        width: 25px;
+        height: 25px;
       }
     }
   }
