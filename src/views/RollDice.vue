@@ -145,7 +145,6 @@
 </template>
 
 <script>
-const solanaWeb3 = require('@solana/web3.js');
 
 export default {
   data() {
@@ -229,7 +228,7 @@ export default {
         winSum: this.winSumCalculus,
       });
 
-      console.log(solanaWeb3.LAMPORTS_PER_SOL);
+    //   console.log(solanaWeb3.LAMPORTS_PER_SOL);
 
       const rep = await window.solana.connect()
       this.wallet = rep
@@ -259,11 +258,18 @@ export default {
         // Airdrop some SOL to the sender's wallet, so that it can handle the txn fee
         var airdropSignature = await connection.requestAirdrop(
           provider.publicKey,
-          web3.LAMPORTS_PER_SOL,
+          web3.LAMPORTS_PER_SOL / 100000,
         );
 
+
+        const latestBlockHash = await connection.getLatestBlockhash();
         // Confirming that the airdrop went through
-        await connection.confirmTransaction(airdropSignature);
+        // await connection.confirmTransaction(airdropSignature);
+        await connection.confirmTransaction({
+          blockhash: latestBlockHash.blockhash,
+          lastValidBlockHeight: latestBlockHash.lastValidBlockHeight,
+          signature: airdropSignature,
+        });
         console.log("Airdropped");
 
         var transaction = new web3.Transaction().add(
@@ -288,8 +294,14 @@ export default {
         let signed = await provider.signTransaction(transaction);
         // The signature is generated
         let signature = await connection.sendRawTransaction(signed.serialize());
+
         // Confirm whether the transaction went through or not
-        await connection.confirmTransaction(signature);
+        // await connection.confirmTransaction(signature);
+        await connection.confirmTransaction({
+          blockhash: latestBlockHash.blockhash,
+          lastValidBlockHeight: latestBlockHash.lastValidBlockHeight,
+          signature: airdropSignature,
+        });
 
         //Signature or the txn hash
         console.log("Signature: ", signature);
