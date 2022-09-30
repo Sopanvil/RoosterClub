@@ -11,12 +11,13 @@
         </router-link>
         <div class="header-main-links">
           <router-link to="/" class="header-link">Home</router-link>
-          <router-link to="/" class="disabled">Roll</router-link>
+          <router-link to="/roll-dice" class="header-link">Roll</router-link>
           <router-link to="/" class="disabled">RoosterRoll</router-link>
           <a href="https://twitter.com/nft_RFC" target="_blank" class="header-link">Twitter</a>
           <a href="https://discord.gg/wBHYJkmpg5" target="_blank" class="header-link"
             >Discord</a
           >
+          <WalletMultiButton />
         </div>
       </div>
     </div>
@@ -59,11 +60,15 @@
 </template>
 
 <script>
+import { WalletMultiButton } from 'solana-wallets-vue'
 export default {
   data() {
     return {
       isOpen: false,
     };
+  },
+  components: {
+    WalletMultiButton
   },
   methods: {
     openHeader() {
