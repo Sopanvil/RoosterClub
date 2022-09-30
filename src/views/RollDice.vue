@@ -141,7 +141,7 @@
       </div>
     </div>
   </div>
-  
+
 </template>
 
 <script>
@@ -228,14 +228,71 @@ export default {
         win: this.winCalculus,
         winSum: this.winSumCalculus,
       });
-      
+
       console.log(solanaWeb3.LAMPORTS_PER_SOL);
 
       const rep = await window.solana.connect()
       this.wallet = rep
-      const destKey = new solanaWeb3.PublicKey('8M9gj6xR8uvpqLrFSbvz9A2vhSvtJFfYL5yGMUNebTPz');
-      console.log(new solanaWeb3.Connection('https://api.devnet.solana.com').getAccountInfo(destKey));
-      
+    //   const destKey = new solanaWeb3.PublicKey('8M9gj6xR8uvpqLrFSbvz9A2vhSvtJFfYL5yGMUNebTPz');
+    //   console.log(new solanaWeb3.Connection('https://api.devnet.solana.com').getAccountInfo(destKey));
+
+      const provider = window.solana;
+
+      var web3 = require("@solana/web3.js");
+
+      //Changes are only here, in the beginning
+      const phantomProvider = this.wallet;
+        if(!phantomProvider){
+          //Urge the user to sign in(connect) again
+        }
+        const pubKey = await phantomProvider.publicKey;
+        console.log("Public Key: ", pubKey);
+
+        // Establishing connection
+        var connection = new web3.Connection(
+          web3.clusterApiUrl('devnet'),
+        );
+
+        // I have hardcoded my secondary wallet address here. You can take this address either from user input or your DB or wherever
+        var recieverWallet = new web3.PublicKey("8M9gj6xR8uvpqLrFSbvz9A2vhSvtJFfYL5yGMUNebTPz");
+
+        // Airdrop some SOL to the sender's wallet, so that it can handle the txn fee
+        var airdropSignature = await connection.requestAirdrop(
+          provider.publicKey,
+          web3.LAMPORTS_PER_SOL,
+        );
+
+        // Confirming that the airdrop went through
+        await connection.confirmTransaction(airdropSignature);
+        console.log("Airdropped");
+
+        var transaction = new web3.Transaction().add(
+          web3.SystemProgram.transfer({
+            fromPubkey: provider.publicKey,
+            toPubkey: recieverWallet,
+            lamports: web3.LAMPORTS_PER_SOL / 20 //Investing 1 SOL. Remember 1 Lamport = 10^-9 SOL.
+          }),
+        );
+
+        // Setting the variables for the transaction
+        transaction.feePayer = await provider.publicKey;
+        let blockhashObj = await connection.getRecentBlockhash();
+        transaction.recentBlockhash = await blockhashObj.blockhash;
+
+        // Transaction constructor initialized successfully
+        if(transaction) {
+          console.log("Txn created successfully");
+        }
+
+        // Request creator to sign the transaction (allow the transaction)
+        let signed = await provider.signTransaction(transaction);
+        // The signature is generated
+        let signature = await connection.sendRawTransaction(signed.serialize());
+        // Confirm whether the transaction went through or not
+        await connection.confirmTransaction(signature);
+
+        //Signature or the txn hash
+        console.log("Signature: ", signature);
     },
   },
 };
